@@ -1,18 +1,24 @@
 {
   "name": "practive-cli",
   "bin": {
-    "practive": "./index.js"
+    "practive": "./dist/index.js"
   },
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsc -w"
+    "dev": "tsc -w",
+    "link-cli": "yarn --global unlink practive-cli && yarn --global link "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/node": "^22.0.0",
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
   }
 }
+
